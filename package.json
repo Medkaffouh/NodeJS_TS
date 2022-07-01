@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "jest --verbose",
+    "test-watch": "jest --verbose --watchAll",
     "start": "npx tsc && node dist/index.js",
-    "dev": "concurrently -n \"TS, Node\" \"npx tsc --watch\" \"nodemon dist/index.js\""
+    "dev": "concurrently -n \"TS, Node\" \"npx tsc --watch\" \"nodemon dist/index.js\" \"jest --verbose --watchAll\""
   },
   "keywords": [],
   "author": "",
