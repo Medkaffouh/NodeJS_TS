@@ -5,7 +5,7 @@ export default class Server{
     public start():void{
         const app=express();
         app.get("/",(req:Request,resp :Response)=>{
-            resp.send("Hello express TypeScript")
+            resp.send("Test ....");
         });
         app.listen(this.port,()=>{
             console.log("Server Started...");
